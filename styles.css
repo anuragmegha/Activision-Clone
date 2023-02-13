@@ -1,0 +1,761 @@
+@font-face {
+    font-family: "DIN Next LT Pro";
+    src: url(./fonts/DIN-Next-LT-Pro-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DIN Next LT Pro", sans-serif;
+}
+/* header */
+.main-header{
+    position: fixed;
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+.header{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    height: 100%;
+}
+.main-logo{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+}
+.main-logo img{
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    object-fit:contain;
+}
+.main-menu{
+    position: absolute;
+    height: 100%;
+    left: 10%;
+    width: 30%;
+}
+.main-menu a{
+    color: white;
+}
+.main-menu ul{
+    margin: 15px 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu :hover{
+    color: white;
+}
+.main-menu h1{
+    color: #b3b6b7;
+    font-size: 14px;
+    font-weight: 100;
+}
+.main-menu-tags{
+    display: flex;
+    align-items: center;
+}
+.signup-login{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 10%;
+}
+.signup-login ul{
+    list-style-type: none;
+    display: flex;
+    margin: 15px;
+    justify-content:space-around;
+}
+.signup-login a{
+    color: #b3b6b7;
+    font-size: 14px;
+}
+.signup-login strong{
+    color: white;
+}
+.signup-login button{
+    color: white;
+    background-color: rgb(7 104 175 / 50%);
+    margin-top: -15px;
+    width: 80px;
+    padding: 5px;
+    border: 2px solid rgb(1, 65, 204);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.signup-login button:hover{
+    border-color: #0197ee;
+}
+/* content */
+.main-content{
+    width: 100%;
+    height: 100%;
+}
+.content-1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.content-1 video{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.content-1 img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 130px;
+    height: 65px;
+}
+.content-1-txt{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    font-size: 24px;
+}
+.content-1-txt img{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 530px;
+    height: 190px;
+}
+.content-1-txt h1{
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 25%;
+}
+.content-1-txt button{
+    position: absolute;
+    background-color: rgb(7 104 175 / 50%);
+    border: 2px solid rgb(7, 105, 175);
+    width: 250px;
+    height: 50px;
+    top: 60%;
+    left: 25%;
+    border-radius: 50px;
+}
+.content-1 button:hover{
+    background-color: rgb(7 104 175 / 70%);
+    border-color: #0768af;
+    cursor: pointer;
+}
+.content-1-txt a{
+    color: white;
+    font-size: 16px;
+}
+.navbar{
+    position: absolute;
+    background-color: rgb(0 0 0 / 50%);
+    width: 20%;
+    height: 50px;
+    bottom: 5%;
+    left: 40%;
+    right: 0;
+    border-radius: 30px;
+}
+.nav-dots{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.nav-dots ul, .nav-arrow{
+    list-style: none;
+    display: flex;
+    color: white;
+    opacity: 0.75;
+}
+.nav-dots li{
+    margin: 5px;
+}
+.nav-dots span{
+    
+    font-size: 15px;
+}
+.nav-arrow{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+.content-2{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+    height: 1500px;
+    background-image: radial-gradient(ellipse 2000px 1000px at top , rgba(255, 255, 255, 0.445),black 40%);
+}
+.content-2 h1{
+    color: white;
+    line-height: 50px;
+    font-size: 34px;
+    top: 100px;
+    position: relative;
+}
+.game-news-menu{
+    position: absolute;
+    top: 180px;
+    left: 10%;
+    width: 80%;
+    height: 80px;
+    border: 1px solid;
+    border-color: white transparent white transparent;
+}
+.game-news-menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+
+}
+.game-news-menu li{
+    cursor: pointer;
+}
+.game-news-menu h3{
+    margin: 20px;
+    margin-top: 15px;
+    font-size: 23px;
+    color: white;
+}
+.game-news-menu li img{
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    filter: saturate(0%);
+    opacity: 0.5;
+}
+.game-news-menu li img:hover{
+    filter: saturate(100%);
+    opacity: 1;
+}
+.blog-menu{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 1100px;
+    top: 300px;
+}
+.blog-1{
+    position: absolute;
+    width: 33.333%;
+    height: 100%;
+}
+.blog-2{
+    position: absolute;
+    left: 33.333%;
+    width: 33.333%;
+    height: 100%;
+}
+.blog-3{
+    position: absolute;
+    left: 66.666%;
+    width: 33.333%;
+    height: 100%;
+}
+.blog{
+    position: relative;
+    margin: 10px;
+    width: 100%-10px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.blog-img{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+}
+.blog-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-txt{
+    position: absolute;
+    color: white;
+    background-image: radial-gradient(ellipse 900px 500px at top , rgba(255, 255, 255, 0.445),black 40%);
+    padding-left: 20px;
+    width: 100%;
+    top: 60%;
+    height: 40%;
+}
+.blog-txt h2{
+    font-size: 20px;
+}
+.blog-txt h4{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blog-shape{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.blog-shape-1{
+    position: absolute;
+    background-color: white;
+    width: 85.7%;
+    height: 1px;
+}
+.blog-shape-2{
+    position: absolute;
+    background-color: white;
+    width: 70px;
+    height: 10px;
+}
+.blog-shape-3{
+    position: absolute;
+    background-color: white;
+    left: 80%;
+    width: 70px;
+    height: 1px;
+    margin-top: 24px;
+    margin-left: 17px;
+    transform: rotate(45deg);
+}
+.read-more{
+    position: absolute;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+.read-more h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+.content-2 button{
+    position: absolute;
+    background-color: black;
+    border: 2px solid white;
+    width: 250px;
+    height: 50px;
+    bottom: 100px;
+    border-radius: 50px;
+    left: 43%;
+    cursor: pointer;
+}
+.content-2 button:hover{
+    background-color: rgb(7 104 175 / 70%);
+    border-color: #0768af;
+}
+.content-2 button a{
+    color: white;
+}
+.content-3{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+    height: 500px;
+}
+.support-centre{
+    position: absolute;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    border: 1px solid;
+    border-color: white transparent white transparent;
+}
+.support-centre img{
+    position: absolute;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    object-fit:contain;
+}
+.support-txt{
+    position: absolute;
+    top: 20%;
+    left: 150px;
+    width: 20%;
+}
+.support-centre h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.support-centre h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.support-centre button{
+    position: absolute;
+    background-color: black;
+    border: 2px solid white;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    left: 0;
+    cursor: pointer;
+}
+.support-centre button:hover{
+    background-color: rgb(7 104 175 / 70%);
+    border-color: #0768af;
+}
+.support-centre button a{
+    color: white;
+}
+.content-4{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    color: white;
+}
+.community{
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+}
+.community-txt{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+.community-txt h1{
+    font-size: 34px;
+    margin: 10px;
+}
+.community-content{
+    margin-top: 30px;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+}.content-arrows{
+    position: absolute;
+    width: 94.5%;
+    left: 2.5%;
+    height: 10%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-left-arrow span{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+.content-right-arrow span{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+.content-left-arrow, .content-right-arrow{
+    cursor: pointer;
+}
+.content-div1{
+    position: absolute;
+    width: 33.333%;
+    height: 100%;
+}
+.content-div2{
+    position: absolute;
+    left: 33.333%;
+    width: 33.333%;
+    height: 100%;
+}
+.content-div3{
+    position: absolute;
+    width: 33.333%;
+    left: 66.666%;
+    height: 100%;
+}
+.community-card{
+    position: absolute;
+    background-color: #222;
+    left: 1%;
+    width: 98%;
+    height: 100%;
+}
+.card-top{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+.card-icon{
+    position: absolute;
+    margin: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border: 2.5px solid white;
+    overflow: hidden;
+}
+.card-icon img{
+    object-fit: cover;
+    width: 100%;
+}
+.card-txt{
+    position: absolute;
+    width: 60%;
+    top: 20%;
+    height: 60%;
+    left: 20%;
+}
+.card-username{
+    display: flex;
+    align-items: center;
+}
+.card-social{
+    position: absolute;
+    left: 83.5%;
+    width: 13%;
+    top: 20%;
+    height: 60%;
+}
+.card-social img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+}
+.card-txt h1{
+    font-size: 20px;
+}
+.card-txt h2{
+    font-size: 14px;
+}
+.card-bottom{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+}
+.card-bottom p{
+    font-size: 20px;
+    color: white;
+}
+.content-5{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 400px;
+}
+.join-us{
+    position: absolute;
+    top: 100px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+.joinus-img{
+    position: absolute;
+    left: 5%;
+    width: 85%;
+}
+.transparent-left{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(to right,black 40%, transparent);
+}
+.transparent-right{
+    position: absolute;
+    left: 55%;
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(to left,black 30%, transparent);
+}
+.join-us-txt{
+    color: white;
+    position: absolute;
+    display: flex;
+    left: 5%;
+    width: 90%;
+    top: 50px;
+    justify-content: space-between;
+}
+.join-left{
+    top: 100px;
+}
+.join-left h1{
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+.join-left h2{
+    font-size: 18px;
+    color: white;
+    font-weight:lighter;
+}
+.join-right{
+    width: 30%;
+    margin-top: 30px;
+}
+.join-right h1{
+    font-size: 24px;
+}
+.join-right ul{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.join-right div{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.join-right ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+.join-left button{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.473);
+    border: 2px solid white;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    left: 0;
+    top: 100px;
+    cursor: pointer;
+}
+.join-left button:hover{
+    background-color: rgb(7 104 175 / 70%);
+    border-color: #0768af;
+}
+.join-left button a{
+    color: white;
+    font-size: 16px;
+}
+/* footer */
+.main-footer{
+    position: relative;
+    background-color: black;
+    background-image: radial-gradient(ellipse 1500px 500px at top , rgba(255, 255, 255, 0.274),black 60%);
+    width: 100%;
+    height: 50vh;
+    left: 0;
+    bottom: 0;
+}
+.upper-footer{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 5%;
+    left: 10%;
+}
+.lower-footer{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    top: 60%;
+    height: 40%;
+}
+.follow-us-main{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+}
+.follow-us-main h1,.popular-games h1,.company h1,.legal h1{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+.follow-us-main img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.popular-games{
+    position: absolute;
+    left: 25%;
+    width: 25%;
+    height: 100%;
+}
+
+.popular-games ul,.company ul,.legal ul{
+    list-style: none;
+}
+.popular-games li,.company li,.legal li{
+    margin-bottom: 5px;
+}
+.popular-games a, .company a,.legal a{
+    color: rgba(255, 255, 255, 0.493);
+}
+.upper-footer a:hover{
+    color: white;
+}
+.company{
+    position: absolute;
+    left: 50%;
+    width: 25%;
+    height: 100%;
+}
+.legal{
+    position: absolute;
+    left: 75%;
+    width: 25%;
+    height: 100%;
+}
+.footer-logo{
+    width: 100%;
+    color: white;
+}
+.footer-bg{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.footer-bg img{
+    width: 100%;
+}
+.rating{
+    position: absolute;
+    bottom: 0;
+}
+.rating ul{
+    list-style: none;
+    display: flex;
+}
+.rating img{
+    margin-right: 5px;
+    height: 50px;
+    object-fit: contain;
+}
+.flag{
+    position: absolute;
+    bottom: 40%;
+    left: 49%;
+}
+.back-to-top{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+    top: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.side-arrow{
+    position: absolute;
+    top: 7.5px;
+}
+.back-to-top p{
+    color: white;
+    font-size: 14px;
+}
